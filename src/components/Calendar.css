@@ -1,0 +1,51 @@
+.calendars-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Her satırda 4 sütun */
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100vh; /* Tüm ekranı kapla */
+  }
+  
+  .calendar-container {
+    border: 1px solid #ccc;
+    padding: 0;
+    box-sizing: border-box;
+    height: calc((100vh - 40px) / 3); /* 3 satır olacak şekilde ayarla */
+    overflow: hidden; /* Taşma olursa gizle */
+  }
+  
+  .fc {
+    height: 100% !important; /* FullCalendar'ın yüksekliğini tam olarak ayarla */
+  }
+  
+  .fc-scrollgrid {
+    height: 100% !important; /* Scrollgrid yüksekliğini tam olarak ayarla */
+  }
+  
+  .fc-daygrid {
+    height: 100% !important; /* Daygrid yüksekliğini tam olarak ayarla */
+  }
+  
+  .fc-daygrid-day-frame {
+    height: calc(100% - 25px) !important; /* Gün çerçevelerinin yüksekliğini ayarla */
+  }
+  
+  .fc-daygrid-day-top {
+    height: 25px !important; /* Gün üst kısmının yüksekliğini ayarla */
+  }
+  
+  /* Diğer ayın günlerinin arka plan rengini beyaz yap */
+  .fc-day-other {
+    background-color: white !important;
+  }
+  
+  /* Tatil günleri için özel sınıf */
+  .fc-holiday {
+    background-color: #ffdddd; /* Açık kırmızı arka plan */
+  }
+  
+  /* Günlerin metin rengini siyah yapmak için */
+  .fc-daygrid-day-number, .fc-daygrid-day-frame {
+    color: black !important; /* Gün numaraları ve içerikleri için siyah renk */
+  }
