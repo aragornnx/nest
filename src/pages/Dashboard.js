@@ -11,7 +11,7 @@ const Dashboard = () => {
   return (
     <Paper elevation={3} style={{ padding: '20px', backgroundColor: 'white' }}>
       <Typography variant="h4" color="primary">
-        Dashboard
+        Kroki
       </Typography>
       <Calendar events={events} />
     </Paper>
